@@ -1,6 +1,8 @@
 name: IB Gateway image security scan
 
 on:
+  push:
+    branches: ['test/trivy-actions-471']
   schedule:
     - cron: '43 4 * * 1'
   workflow_dispatch:
